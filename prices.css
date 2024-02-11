@@ -1,0 +1,21 @@
+#prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+   
+}
+.prices-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .prices-section {
+        flex-direction: column;
+    }
+    .prices-section div {
+        margin: 10px;
+    }
+}

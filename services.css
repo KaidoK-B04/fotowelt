@@ -1,0 +1,87 @@
+#services {
+    margin: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.application-section {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0px 0px 20px;
+    width: 560px;
+    border: 1px solid black;
+}
+
+.application-image {
+    display: block;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-basis: auto; /* Let the browser determine the initial size */
+    overflow: hidden;
+    padding: 20px;
+}
+
+.application-text {
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+}
+/*Outdoor section*/
+
+.outdoor-section {
+    margin-top: 100px;
+}
+.outdoor-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.outdoor-text {
+    padding: 20px 50px 20px 50px;
+}
+.outdoor-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.outdoor-image {
+    display: block;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 0px;
+    border: 2px solid rgb(62, 45, 45);
+}
+
+
+@media only screen and (max-width: 750px) {
+    .outdoor-image-section {
+        flex-direction: column;
+   
+    }
+}
+@media only screen and (max-width: 490px) {
+    .application-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 20px;
+    }
+}
